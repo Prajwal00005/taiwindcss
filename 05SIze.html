@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0"></script>
+</head>
+<body>
+    <h1 class="text-xl">
+        Welcome to world
+    </h1>
+    
+    <div class="parent text-sm">
+        <span class="child text-[2em]">
+            Hello
+        </span>
+    </div>
+
+    <span class="first text-[3rem]">
+        world
+    </span>
+
+    <div class="container h-[50vh] w-[50vw] border border-red-500">
+        <div class="box1 h-[50%] w-[50%] border border-red-500">
+
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- Font size with em, rem, and px:
+
+text-[2em] for 2em (equivalent to the font-size of the parent element multiplied by 2).
+text-[3rem] for 3rem (relative to the root font-size).
+text-sm (equivalent to font-size: 15px as defined in the .parent class in the original CSS).
+text-xl (equivalent to font-size: 16px for the root element, which is the default font-size for html).
+Viewport units (vh and vw):
+
+h-[50vh] for 50vh (50% of the viewport height).
+w-[50vw] for 50vw (50% of the viewport width).
+Percentage units (%):
+
+h-[50%] and w-[50%] for 50% height and width relative to the parent element.
+Borders and other utilities:
+
+border for adding borders.
+border-red-500 for setting the border color to red. -->

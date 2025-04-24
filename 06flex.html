@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class=" bg-gray-500 h-[300px] p-2 w-[80%] flex justify-center items-center">
+        <div id="box" class="child-1 bg-red-500 order-4 flex-basis-[1px] h-[100px] w-[100px]">
+        </div>
+        <div id="box" class="child-2 bg-yellow-400 h-[100px] w-[100px]">
+        </div>
+        <div id="box" class="child-3 bg-blue-800 flex-basis-[40%] flex-shrink-4 h-[100px] w-[100px]">
+        </div>
+        <div id="box" class="child-4 bg-pink-600 flex-basis-[1px] h-[100px] w-[100px]">
+        </div>
+    </div>
+</body>
+</html>
+<!-- Tailwind Classes Used:
+Parent container (.parent):
+
+bg-gray-500 = background color of gray.
+h-[300px] = height of 300px.
+p-2 = padding of 10px (equivalent to padding: 10px;).
+w-[80%] = width of 80% of the parent.
+flex = sets the display to flex.
+justify-center = horizontally centers the flex items.
+items-center = vertically centers the flex items.
+Child elements:
+
+bg-red-500, bg-yellow-400, bg-blue-800, bg-pink-600 = background colors for each item.
+order-4 = sets the order of .child-1 to 4 (this is similar to the order property in CSS).
+flex-basis-[1px] and flex-basis-[40%] = flex-basis equivalent in Tailwind.
+flex-shrink-4 = equivalent to flex-shrink: 4 in CSS.
+h-[100px] and w-[100px] = setting the height and width to 100px.
+Notes on Flex:
+Order: Tailwind allows setting the order of items with order-[value].
+Flex-basis: Tailwind supports flex-basis using the flex-basis-[value] class, and it works for setting the initial size of flex items.
+Flex-shrink: Use flex-shrink-[value] to control how much a flex item should shrink. For instance, flex-shrink-4 makes it shrink by a factor of 4. -->

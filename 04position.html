@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="container h-[50vh] w-[50%] border border-black">
+        <div class="relative h-[90px] w-[90px] border border-gray-500 bg-red-500 text-white top-[50%] left-[50%]">
+            relative
+        </div>
+        <div class="absolute h-[90px] w-[90px] border border-gray-500 bg-yellow-500 top-[20%] right-0">
+            absolute
+        </div>
+        <div class="sticky h-[90px] w-[90px] border border-gray-500 bg-blue-500 text-white top-0 right-0">
+            navbar
+        </div>
+        <div class="fixed h-[90px] w-[90px] border border-gray-500 bg-green-500 text-white bottom-2 right-0">
+            fixed
+        </div>
+    </div>
+    <div style="height:900px"></div>
+</body>
+</html>
+<!-- Tailwind Classes Explained:
+relative = position: relative allows the element to be positioned relative to its normal position.
+absolute = position: absolute positions the element relative to its nearest positioned ancestor (the parent element with a relative or absolute position).
+sticky = position: sticky allows the element to stick to a specified position (in this case, the top) as you scroll, within its parent container.
+fixed = position: fixed positions the element relative to the viewport, meaning it will stay fixed in place even as the page scrolls.
+Specific Tailwind Classes:
+top-[value], left-[value], right-[value], bottom-[value]: These classes set the position of the element (use values like top-0, top-[50%], right-0).
+h-[value], w-[value]: These set the height and width (like h-[90px], w-[90px]).
+bg-[color] and text-[color]: Set the background and text colors, like bg-red-500 or text-white.
+border: Adds a border (you can use border-[color] to customize). -->

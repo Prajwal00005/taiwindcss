@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0"></script>
+    <style>
+        /* Custom animation definitions */
+        @keyframes movement {
+            from {
+                top: 0;
+                left: 0;
+            }
+
+            to {
+                top: 0;
+                left: 80%;
+            }
+        }
+
+        @keyframes round {
+            0% {
+                top: 1%;
+                left: 5%;
+            }
+            25% {
+                top: 5%;
+                left: 10%;
+            }
+            50% {
+                top: 10%;
+                left: 15%;
+            }
+            100% {
+                top: 15%;
+                left: 20%;
+            }
+        }
+
+        /* Applying custom animations */
+        .box1 {
+            animation: movement 4s ease-in 2s 2;
+        }
+
+        .box2 {
+            animation: round 4s ease-in 2s 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="conta h-[80vh] w-[80%] shadow-[2px_2px_6px_red]">
+        <div class="box h-[100px] w-[100px] border border-black m-1 bg-blueviolet relative box1">
+        </div>
+        <div class="box h-[100px] w-[100px] border border-black m-1 bg-[#311e42] rounded-full relative box2">
+        </div>
+    </div>
+</body>
+</html>

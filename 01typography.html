@@ -1,0 +1,46 @@
+<!-- typography and color -->
+ <!--
+ font-family >>font-[value]
+font-size >>text-[xs,sm,base,lg,xl,4xl] start from 12px as xs and 2 increase 
+font-style [italic/not-italic]
+font-weight >>font-[value]
+letter-spacing>>tracking-[value] //wider,widest/
+line-height>>text-[size/number]
+list-style-image >>list-style-[url(/img/)][image url]
+list-style-position>>list-[inside/outside]
+list-style-type>>list-[none,disc,decimal]
+text-align>> text-[value]//left,right,start,end,justify,center
+color>>text-[colorvalue]-[dark/200/300/400]
+text-decoration-style>>underline
+text-decoration-color>>decoration-[color]-500
+text-decoration-style>>decoration-[value]  //solid // none//double
+text-decoration-thickness>>decoration-3
+text-underline-offset>>underline-offset-1,2,4,8
+text-transform>>uppercase/capitalize
+text-overflow>>trucate[...] overflow-hidden
+text-wrap>>text-wrap
+text-indent>>indent-8 //space in first line
+vertical-align>>align-baseline,align-top
+white-space>>whitespace-pre
+hyphens>>hypens-maunal &shy;
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+   <!--         font-family weight  size style letter-spacing  align-text color text-decoration decoration-style width-decoration underline-gap text-transform
+            text-alignment -->
+    <h1 class="font-serif font-bold text-4xl italic tracking-widest text-center text-blue-800 underline decoration-red-500 decoration-7 underline-offset-6 uppercase  align-bottom ">
+        Hello world!
+    </h1>
+    <h1 class="text-4xl italic text-base/10">
+        Hello world!
+    </h1>
+</body>
+</html>
